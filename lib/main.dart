@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/pages/home_page.dart';
 import 'package:flutter_application_1/pages/login_page.dart';
+import 'package:flutter_application_1/utils/routes.dart';
 
 // ignore_for_file: prefer_const_constructors
 void main() {
@@ -19,7 +20,8 @@ class MyApp extends StatelessWidget {
         darkTheme: ThemeData(brightness: Brightness.dark),
         routes: {
           "/": (context) => LoginPage(),
-          "/login": (context) => LoginPage(),
+          MyRoutes.loginRoute: (context) => LoginPage(),
+          MyRoutes.homeRoute: (context) => HomePage(),
         });
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/widgets/drawer.dart';
 
 // ignore_for_file: prefer_const_constructors
 class HomePage extends StatelessWidget {
@@ -9,14 +10,13 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("HomePage"),
-        
       ),
       body: Center(
         child: Container(
           child: Text("maya shankar jha"),
         ),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }

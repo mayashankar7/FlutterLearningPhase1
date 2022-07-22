@@ -63,8 +63,9 @@ class _LoginPageState extends State<LoginPage> {
                       labelText: "Username",
                     ),
                     onChanged: (value) {
-                      name = value;
-                      setState(() {});
+                      setState(() {
+                        name = value;
+                      });
                     },
                     validator: (String? value) {
                       if (value!.isEmpty) {

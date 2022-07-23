@@ -2,6 +2,9 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/pages/dicto.dart';
+import 'package:flutter_application_1/pages/home_page.dart';
+import 'package:flutter_application_1/utils/routes.dart';
 
 // ignore_for_file: prefer_const_constructors
 class MyDrawer extends StatelessWidget {
@@ -31,6 +34,13 @@ class MyDrawer extends StatelessWidget {
               "Home",
               textScaleFactor: 1.2,
             ),
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => HomePage(),
+                  ));
+            },
           ),
           ListTile(
             leading: Icon(
@@ -40,7 +50,23 @@ class MyDrawer extends StatelessWidget {
               "Profile",
               textScaleFactor: 1.2,
             ),
-          )
+          ),
+          ListTile(
+            leading: Icon(
+              CupertinoIcons.app,
+            ),
+            title: Text(
+              "Word Pairs",
+              textScaleFactor: 1.2,
+            ),
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Dicto(),
+                  ));
+            },
+          ),
         ],
       ),
     );

@@ -1,4 +1,3 @@
-import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/utils/routes.dart';
@@ -63,8 +62,9 @@ class _LoginPageState extends State<LoginPage> {
                       labelText: "Username",
                     ),
                     onChanged: (value) {
-                      name = value;
-                      setState(() {});
+                      setState(() {
+                        name = value;
+                      });
                     },
                     validator: (String? value) {
                       if (value!.isEmpty) {

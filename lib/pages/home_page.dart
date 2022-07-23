@@ -9,13 +9,12 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("HomePage"),
-      ),
-      body: Center(
-        child: Container(
-          child: Text("maya shankar jha"),
+        centerTitle: true,
+        title: Text(
+          "Practice App",
         ),
       ),
+      body: Center(),
       drawer: MyDrawer(),
     );
   }

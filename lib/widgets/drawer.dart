@@ -9,7 +9,7 @@ class MyDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final imageURL =
+    const String imageURL =
         "https://pbs.twimg.com/profile_images/1277591126065569795/1L1Ymlkd_400x400.jpg";
     return Drawer(
       child: ListView(

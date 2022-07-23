@@ -1,8 +1,6 @@
-
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/pages/home_page.dart';
 import 'package:flutter_application_1/utils/routes.dart';
-
-// ignore_for_file: prefer_const_constructors
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -20,8 +18,10 @@ class _LoginPageState extends State<LoginPage> {
       setState(() {
         changedButton = true;
       });
-      await Future.delayed(Duration(seconds: 1));
+      await Future.delayed(const Duration(seconds: 1));
       await Navigator.pushNamed(context, MyRoutes.homeRoute);
+      // await Navigator.push(
+      //     context, MaterialPageRoute(builder: (context) => const HomePage()));
       setState(() {
         changedButton = false;
       });
@@ -44,7 +44,7 @@ class _LoginPageState extends State<LoginPage> {
             ),
             Text(
               "Welcome $name ",
-              style: TextStyle(
+              style: const TextStyle(
                   color: Colors.blue,
                   fontSize: 20,
                   fontWeight: FontWeight.bold),

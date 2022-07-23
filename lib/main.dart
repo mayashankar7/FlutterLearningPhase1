@@ -29,9 +29,9 @@ class MyApp extends StatelessWidget {
             )),
         darkTheme: ThemeData(brightness: Brightness.dark),
         debugShowCheckedModeBanner: false,
-        initialRoute: MyRoutes.dictoRoute,
+        initialRoute: MyRoutes.loginRoute,
         routes: {
-          "/": (context) => const HomePage(),
+          "/": (context) => const LoginPage(),
           MyRoutes.loginRoute: (context) => const LoginPage(),
           MyRoutes.homeRoute: (context) => const HomePage(),
           MyRoutes.dictoRoute: (context) => const Dicto(),
